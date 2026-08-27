@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="solicitud-page">
+  <header>
+    <a href="index.html" class="logo">← Pagina principal</a>
+    <p class="mono">FORMULARIO</p>
+  </header>
+  <main>
+    <section class="form-container">
+      <h2>Realice su solicitud aquí:</h2>
+      <form id="solicitudForm" novalidate>
+        <div class="field"><label>Nombre:</label><input type="text" id="nombre" required>
+          <span class="error">
+          </span>
+        </div>
+        <div class="field"><label>Plan deseado:</label><select id="plan" required>
+            <option value="">Seleccionar...</option>
+            <option value="basico">Básico-72H</option>
+            <option value="estandar">Estándar-48H</option>
+            <option value="premium">Premium-24H</option>
+          </select><span class="error"></span>
+        </div>
+        <div class="field"><label>Servicio:</label>
+          <select id="servicio" required>
+            <option value="">Seleccionar...</option>
+            <option value="software">Soporte Software</option>
+            <option value="hardware">Reparación Hardware</option>
+            <option value="asesoria">Asesoría</option>
+          </select>
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label>Tipo de dispositivo:</label>
+          <select id="dispositivo" required>
+            <option value="">Seleccionar...</option>
+            <option value="laptop">Laptop</option>
+            <option value="pc">PC</option>
+            <option value="celular">Celular</option>
+            <option value="otro">Otro</option>
+          </select>
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label>Fecha disponible para el diagnostico:</label><input type="date" id="fecha" required><span class="error"></span>
+        </div>
+        <div class="field">
+          <label>Celular:</label><input type="tel" id="celular" required><span class="error"></span>
+        </div>
+        <div class="field" id="otro-field">
+          <label>En caso de elegir "Otro" explique aquí:</label>
+          <input type="text" id="otro-text">
+          <span class="error">
+          </span>
+        </div>
+        <button type="submit" class="btn-submit">ENVIAR SOLICITUD</button>
+        <p id="status" class="mono"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECNORESCATE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">TECNORESCATE</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#producto">PRODUCTO</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div><a href="solicitud.html" class="btn-small">SOLICITAR AYUDA</a><button id="hamburger">☰</button></div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-img">
+        <!-- CAMBIA hero.jpg por tu imagen -->
+        <img src="img/image1.jpeg" alt="Soluciones">
+      </div>
+      <div class="hero-text">
+        <p class="mono">● EXPRESS 24/7 QUITO</p>
+        <h1>Soluciones<br>Tecnológicas</h1>
+        <p>Reparación rápida y eficaz a domicilio.</p><a href="solicitud.html" class="btn-black">SOLICITAR AYUDA</a>
+      </div>
+    </section>
+
+    <section id="info">
+      <h2>¿Quienes somos?</h2>
+      <p class="sub">Somos un servicio express enfocados en el diagnóstico y resolución de problemas tecnológicos,
+        ofrecemos una entrega rápida y eficaz ante cualquier problema relacionado con dispositivos tecnológicos.</p>
+    </section>
+    <section id="servicios">
+      <div class="cards-3">
+        <article class="service-card zoom-card">
+          <img src="img/image3.jpeg" alt="Soporte Software" onerror="this.parentElement.classList.add('no-img')">
+          <div class="overlay"></div>
+          <div class="card-info">
+            <h4>01 Soporte de Software</h4>
+            <p>Instalación de programas, eliminación de virus.</p>
+          </div>
+        </article>
+        <article class="service-card zoom-card">
+          <img src="img/image2.jpeg" alt="Hardware" onerror="this.parentElement.classList.add('no-img')">
+          <div class="overlay"></div>
+          <div class="card-info">
+            <h4>02 Reparación de Hardware</h4>
+            <p>Diagnóstico, limpieza interna, cambio de componentes.</p>
+          </div>
+        </article>
+        <article class="service-card zoom-card">
+          <img src="img/image4.jpeg" alt="Asesoría" onerror="this.parentElement.classList.add('no-img')">
+          <div class="overlay"></div>
+          <div class="card-info">
+            <h4>03 Asesoría Tecnológica</h4>
+            <p>Ayuda personalizada para tareas y dispositivos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="producto" class="grid-2">
+      <div>
+        <h2>Como trabajamos</h2>
+        <ol class="steps">
+          <li><strong>1. Diagnóstico gratis</strong> — 30 min</li>
+          <li><strong>2. Reparación express</strong> — A cotizar segun el caso</li>
+          <li><strong>3. Entrega garantizada</strong> — Maximo en 72H</li>
+        </ol>
+      </div>
+      <div class="product-box">
+        <img src="img/image5.gif" alt="Producto animado" class="producto-gif"
+          onerror="this.style.display='none'; document.querySelector('.fallback-gif').style.display='grid'">
+        <div class="fallback-gif"><br><span class="mono"></span></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="grid-2">
+      <div>
+        <h2>Contacto</h2>
+        <p class="mono">Realiza el formulario y nos pondremos en contacto conitgo</p>
+      </div>
+      <div><a href="solicitud.html" class="btn-black big">IR AL FORMULARIO →</a></div>
+    </section>
+  </main>
+  <footer>
+    <p class="mono">© 2026 TECNORESCATE</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
